@@ -3,7 +3,7 @@
 {% block content %}
     <h1>{{ car.model }}</h1>
     <p>This car created:</p>
-    {{ manufacturer.name }} from {{ manufacturer.country }}
+    {{ car.manufacturer.name }} from {{ car.manufacturer.country }}
     <p>On this car work:</p>
     <ul>
         {% for driver in car.drivers.all %}
